@@ -1,0 +1,1 @@
+Exercises from Erlang course: http://www.erlang.org/course/exercises.html
