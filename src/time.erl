@@ -8,11 +8,11 @@ swedish_date() ->
   swedish_date(date()).
 
 swedish_date({Y, M, D}) ->
-  lists:concat([format2digit(Y rem 100), format2digit(M), format2digit(D)]).
+  format2digit(Y rem 100) ++ format2digit(M) ++ format2digit(D).
 
 
 format2digit(N) when N < 10 ->
-  lists:concat([0, integer_to_list(N)]);
+  "0" ++ integer_to_list(N);
 
 format2digit(N) when N >= 10 ->
   integer_to_list(N).
