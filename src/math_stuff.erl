@@ -1,4 +1,4 @@
--module(mathStuff).
+-module(math_stuff).
 
 %% API
 -export([perimeter/1]).
